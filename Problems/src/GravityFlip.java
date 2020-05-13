@@ -28,6 +28,7 @@ public class GravityFlip {
 			sizes[column] = res.nextInt();
 		}
 		columns_size(totalColumns, sizes);
+		res.close();
 	}
 }
 

@@ -33,11 +33,10 @@ public class Team {
 			for (int person = 0; person < 3; person++) {
 				decisions[problem][person] = res.nextInt();
 			}
-		}
-		
+		}	
 		System.out.println(calcProblemAmount(totalProblems,decisions ));
+		res.close();
 	}
 }
-
 
 //Linda Abundis

@@ -32,6 +32,7 @@ public class BeautifulMatrix {
 			}
 		}
 		System.out.println(moves_num( matrix));
+		 res.close();
 	}
 }
 

@@ -38,6 +38,7 @@ public class PetyaAndStrings {
 		String strPerson2= res.next();
 		
 		System.out.println(compareStr(strPerson1, strPerson2));
+		res.close();
 	}
 }
 

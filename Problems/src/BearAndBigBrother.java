@@ -26,6 +26,7 @@ public class BearAndBigBrother {
 		int person2Wgt = res.nextInt();
 		
 		System.out.println(years_num(person1Wgt, person2Wgt));
+		 res.close();
 	}
 }
 

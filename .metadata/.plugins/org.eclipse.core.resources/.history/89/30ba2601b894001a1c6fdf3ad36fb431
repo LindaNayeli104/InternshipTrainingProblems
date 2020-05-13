@@ -1,0 +1,23 @@
+import java.util.Scanner;
+
+//Problem
+// 
+
+public class BoyOrGirl {
+
+	public static void getGender(String username){
+    	
+    	
+	}
+    	
+    public static void main(String args[]){
+        Scanner res = new Scanner(System.in);
+ 
+        String username = res.next();
+      
+        getGender(username);
+        res.close();
+    }
+}
+
+//Linda Abundis
