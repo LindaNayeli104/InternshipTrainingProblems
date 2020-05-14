@@ -10,6 +10,7 @@ public class StonesOnTheTable {
 		int current = 1;
 		int totalStonesRem = 0;
 	
+		
 		if(colors.length() == 1) {
 			return 0;
 		}
@@ -31,9 +32,12 @@ public class StonesOnTheTable {
         int totalStones = res.nextInt();
         String colors = res.next();
  
+       
         System.out.println(calcTotalStonesToRemove(totalStones,colors));
         res.close();
-    }  	
+    }
+    
+    	
 }
 
 //Linda Abundis
