@@ -9,7 +9,6 @@ public class BlackSquare {
 	public static int calcCalories(int[] values, String process) {
 		Hashtable ht = new Hashtable<Integer, Integer>();
 		int totalCal = 0;
-		char character;
 		Integer num = 0;
 		
 		for (int valuePos = 0; valuePos < 4; valuePos++) {
@@ -17,8 +16,7 @@ public class BlackSquare {
 		}
 		
 		for (int value = 0; value < process.length(); value++) {
-			character = process.charAt(value);
-			num = Character.getNumericValue(character);
+			num = (int) process.charAt(value);
 			totalCal += (int) ht.get(num);
 		}
 		
