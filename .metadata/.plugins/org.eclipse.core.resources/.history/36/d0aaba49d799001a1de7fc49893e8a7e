@@ -35,9 +35,12 @@ public class Games {
 				games[gameNum][uniformNum] = res.nextInt();
 			}
         }
+        
         useGuestUnif(totalGames, games);
         res.close();
-    }	
+    }
+    
+    	
 }
 
 //Linda Abundis
