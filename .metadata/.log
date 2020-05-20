@@ -772,3 +772,6 @@ This warning can be switched off on the Team > Git > Confirmations and Warnings 
 
 !ENTRY com.wakatime.eclipse.plugin 1 0 2020-05-19 21:16:55.528
 !MESSAGE wakatime-cli is up to date.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2020-05-19 22:01:20.659
+!MESSAGE Server returned lastModified <= 0 for https://raw.githubusercontent.com/wakatime/eclipse-wakatime/master/update-site/content.jar
