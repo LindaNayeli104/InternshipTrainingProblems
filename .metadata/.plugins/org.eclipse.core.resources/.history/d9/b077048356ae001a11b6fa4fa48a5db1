@@ -1,0 +1,54 @@
+//Problem
+// https://leetcode.com/problems/reverse-integer/
+
+import java.util.*;
+
+public class ReverseInteger {
+    
+    public static int revInt(int num){                                                                                     
+        Stack<Character> st   = new Stack<>();
+        int res = 0;
+        String intRes = "";
+        
+	    if( num < 0){
+	    	intRes = "-";
+	    }
+	    num = Math.abs(num);
+	    String strIni = Integer.toString(num);                                          
+	
+	    for(int numPos=0; numPos< strIni.length(); numPos++){                  
+	
+		    if(strIni.charAt(numPos) != '0'){
+		        st.add(strIni.charAt(numPos));
+		    }
+		    
+		    if(strIni.charAt(numPos) == '0' && numPos != strIni.length()-1) {
+		    	st.add(strIni.charAt(numPos));
+		    }
+		    
+	    }//for
+	        while(!st.isEmpty()){                                                     
+	        	intRes += st.pop();
+	        }
+	        
+	        
+	        try{
+	            res = Integer.valueOf(intRes);
+	           }
+	           
+	           catch(Exception e ){
+	               return 0;
+	           }
+
+	   	        return res;
+	   	    }
+	    
+    
+    
+    public static void main(String[] args) {
+    	int num = -123;
+    	System.out.println(revInt(num));
+	}
+}
+
+//Linda Abundis

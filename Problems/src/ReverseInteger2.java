@@ -1,0 +1,49 @@
+//Problem
+// https://leetcode.com/problems/reverse-integer/
+
+import java.util.*;
+class ReverseInteger2 {
+    public int reverse(int x) {
+        boolean sign = true;
+        int res = 0;
+        String resStr = "";
+        String numStr = "";
+        
+        Stack<Character> st = new Stack<>();
+        
+        if(x<0){
+            sign = false;
+            x *= -1;
+        }
+        
+        if (x >= Integer.MAX_VALUE){
+            return 0;
+        }
+        
+        numStr = Integer.toString(x);
+        
+        for(int i=0; i<numStr.length(); i++){
+            st.push(numStr.charAt(i));
+        }
+        
+        while(!st.isEmpty()){
+            resStr += st.pop();
+        }
+        
+          
+        try{
+            // res = Integer.valueOf(intRes);
+            res = Integer.parseInt(resStr);
+	    }catch(Exception e ){
+	        return 0;
+	    }
+        
+        if(!sign){
+            res *= -1;
+        }
+	   	return res;
+	   	
+    }
+}
+
+//Linda Abundis
