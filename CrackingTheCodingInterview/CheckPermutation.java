@@ -1,4 +1,4 @@
-//1.1 Arrays and Strings
+//1.2 Arrays and Strings
 //Cracking the Coding Interview
 
 import java.util.*;
@@ -42,3 +42,5 @@ public class CheckPermutation{
 
 
 }
+
+//Linda Abundis
