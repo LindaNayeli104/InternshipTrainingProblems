@@ -1,4 +1,4 @@
-//Arrays and Strings
+//1.1 Arrays and Strings
 //Cracking the Coding Interview
 
 public class IsUnique {
