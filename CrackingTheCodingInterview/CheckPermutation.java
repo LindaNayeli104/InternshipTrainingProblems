@@ -39,8 +39,28 @@ public class CheckPermutation{
         System.out.println(check(str1, str2));
     }
 
+    public static void main(String[] args) {
+		String[] strings = {"Rats live on no evil star",
+							"A man, a plan, a canal, panama",
+							"Lleve",
+							"Tacotac",
+							"asda"};
+		for (String s : strings) {
+			boolean a = QuestionA.check(s);
+			boolean b = QuestionB.check(s);
+			boolean c = QuestionC.check(s);
+			System.out.println(s);
+			if (a == b && b == c) {
+				System.out.println("Agree: " + a);
+			} else {
+				System.out.println("Disagree: " + a + ", " + b + ", " + c);
+			}
+			System.out.println();
+		}
 
 
+
+}
 }
 
 //Linda Abundis
