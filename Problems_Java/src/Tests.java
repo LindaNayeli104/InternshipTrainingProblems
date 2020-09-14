@@ -5,27 +5,18 @@ import java.util.Scanner;
 
 public class Tests {
     	
-	public static int () {
-		
-	}
-	
+
 	
 	public static void main(String args[]){
-        Scanner res = new Scanner(System.in);
- 
-        int friendsNum = res.nextInt();
-        int fenceHgt = res.nextInt();
-        int[] friendsHgts = new int[friendsNum];
- 
-        for (int friend = 0; friend < friendsNum; friend++){
-            int num = res.nextInt();
-            friendsHgts[friend] = num;
+        String str1 = "Linda";
+        char[] array = str1.toCharArray();
+        array[4] = 'L';
+        String res = "";
+        for(int i=0;i<array.length;i++){
+            res += array[i];
         }
-        System.out.println();
-        System.out.println(longCalc(friendsNum,fenceHgt,friendsHgts));
-        res.close();
+        System.out.println(res);
     }
-    
     	
 }
 
