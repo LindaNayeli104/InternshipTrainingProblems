@@ -1,3 +1,4 @@
+// https://leetcode.com/explore/interview/card/top-interview-questions-easy/92/array/727/
 class RemoveDuplicatesFromSortedArray {
     public int removeDuplicates(int[] nums) {
         if(nums.length == 0 || nums.length == 1){
@@ -16,3 +17,4 @@ class RemoveDuplicatesFromSortedArray {
         return current+1;
     }
 }
+
