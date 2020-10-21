@@ -9,20 +9,14 @@ class BestTimeToBuyAndSellStockII {
         int profit = 0;
         
         for(int i=0; i<prices.length;i++){
-            if(prices[i] < min){
+            if(prices[i] < min || prices[i] < max){
                 if(max != 0){
                     profit += (max-min);
                 }
                 min = prices[i];
                 max = 0;
             }else{
-                if(prices[i] > max){
-                    max = prices[i];
-                }else{
-                    profit += (max-min);
-                    min = prices[i];
-                    max = 0;
-                }
+                max = prices[i];
             }
         }
         if(max != 0){
