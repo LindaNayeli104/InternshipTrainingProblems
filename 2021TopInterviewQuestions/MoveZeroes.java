@@ -1,3 +1,5 @@
+//https://leetcode.com/explore/interview/card/top-interview-questions-easy/92/array/567/
+
 class Solution {
     public void moveZeroes(int[] nums) {
         int pointer = 0;
